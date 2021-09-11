@@ -1,0 +1,9 @@
+.project
+.metadata
+.classpath
+.settings/
+*.swp
+*.log
+
+/bin
+/lib
