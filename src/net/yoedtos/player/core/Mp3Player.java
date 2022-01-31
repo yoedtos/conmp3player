@@ -91,7 +91,6 @@ public class Mp3Player {
 
 			if (aff instanceof TAudioFileFormat) {
 				Map<String, Object> p1 = aff.properties();
-				// duration of the file in microseconds
 				duration = (Long)p1.get("duration");
 				System.out.print("Duration: ");
 				System.out.printf("%.2f", duration*1e-6);
@@ -160,10 +159,8 @@ public class Mp3Player {
 
 			System.out.println("\nID3 Tag version 1");
 
-			// ID3v1 is older, but still used
 			Tag tag = mp3File.getID3v1Tag();
 
-			// load tag values
 			String artist = tag.getFirst(FieldKey.ARTIST);
 			String album = tag.getFirst(FieldKey.ALBUM);
 			String title = tag.getFirst(FieldKey.TITLE);
