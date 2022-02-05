@@ -2,8 +2,7 @@
 .metadata
 .classpath
 .settings/
+target/
+lib/
 *.swp
 *.log
-
-/bin
-/lib
